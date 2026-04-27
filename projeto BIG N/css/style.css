@@ -3,14 +3,14 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #efefef;
+    background-color: #000000;
 }
 
 .header-page {
-    background-color: white;
+    background-color: rgb(248, 161, 0);
     padding: 20px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgb(255, 0, 0);
 }
 
 .body-page {
@@ -42,7 +42,56 @@ body {
 .footer-page {
     text-align: center;
     padding: 30px;
-    background-color: white;
+    background-color: rgb(255, 0, 0);
     margin-top: 20px;
-    color: #666;
+    color: #ffffff;
+}
+
+
+.logo-imagem {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;    
+}
+
+.logo-imagem img {
+    width: 100px;           
+    height: auto;          
+    border-radius: 50%;    
+    object-fit: contain;  
+}
+
+
+.barra-navegacao {
+    display: flex;         
+    align-items: center;   
+    gap: 20px;     
+}
+
+.item-link a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.item-pesquisa {
+    flex-grow: 1; 
+}
+
+.item-pesquisa input {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 25px; 
+    border: 1px solid #ccc;
+    outline: none; 
+}
+
+.botao-entrar {
+    background-color: #e63946; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
 }
