@@ -1,11 +1,11 @@
-titulo-pagina {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 32px;           
-    font-weight: 800;          
-    color: #111111;           
-    text-transform: uppercase;  
-    letter-spacing: -1px;       
-    margin: 10px 0;
+.titulo-pagina {
+    color: #ffffff;          /* Cor do texto */
+    font-size: 2.5rem;       /* Aumenta o tamanho */
+    font-family: 'Arial', sans-serif; /* Use uma fonte mais limpa */
+    font-weight: bold;       /* Deixa em negrito */
+    text-transform: uppercase; /* Deixa tudo em maiúsculo para impacto */
+    letter-spacing: 2px;     /* Espaçamento entre letras */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
 }
 
 
@@ -19,7 +19,7 @@ body {
 }
 
 .header-page {
-    background-color: rgb(248, 161, 0);
+    background-color: rgb(122, 0, 0);
     padding: 20px;
     text-align: center;
     box-shadow: 0 2px 5px rgb(255, 0, 0);
@@ -98,12 +98,39 @@ body {
     outline: none; 
 }
 
-.botao-entrar {
+.item-login {
     background-color: #e63946; 
-    color: white;
+    color: red;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 10px;
     border-radius: 20px;
     font-weight: bold;
     cursor: pointer;
+    position:absolute;
+    top: 20px;
+    right: 20px;
 }
+
+.imagem-login {
+    background-image: url(FundoLogin.png);
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 500%;
+    height: auto;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.category {
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.card:hover img { transform: scale(1.05); transition: 0.3s; }
